@@ -12,10 +12,14 @@ namespace Networking_client
     public class ClientFormController
     {
         public ClientForm myClientForm { get; set; }
-        public Client myClient { get; set; } = new Client();
+        public Client myClient { get; set; }
         Thread clientThread;
-        public ClientFormController()
+        public string ServerIPAddress { get; set; }
+        public ClientFormController(string IPAddress)
         {
+            this.ServerIPAddress = IPAddress;
+            myClient = new Client(ServerIPAddress);
+
             myClientForm = new ClientForm(this);
             clientThread = new Thread(myClient.Start);
 
@@ -34,10 +38,15 @@ namespace Networking_client
     public class Client
     {
         private TcpClient client;
+        public string  ServerIPAddress { get; set; }
+        public Client(string ServerIPAddress)
+        {
+            this.ServerIPAddress = ServerIPAddress;
+        }
 
         public void Start()
         {
-            client = new TcpClient("192.168.220.124", 5000);
+            client = new TcpClient(this.ServerIPAddress, 5000);
 
             Thread listenerThread = new Thread(Listen);
             listenerThread.Start();

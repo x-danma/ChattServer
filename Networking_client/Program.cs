@@ -14,7 +14,8 @@ namespace Networking_client
     {
         static void Main(string[] args)
         {
-            new ClientFormController();
+            string IPAddress = "192.168.220.124";
+            new ClientFormController(IPAddress);
         }
     }
 }
