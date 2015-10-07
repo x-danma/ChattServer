@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChattServerForm", "ChattServerForm\ChattServerForm.csproj", "{80C85F6F-1998-4E67-978B-0EC62675C9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking_client", "..\..\..\..\..\..\..\Downloads\Networking\Networking\Networking_client\Networking_client.csproj", "{9CD727CF-02D3-4659-8ECC-0B2EC88422FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking_client", "..\Networking_client\Networking_client.csproj", "{9CD727CF-02D3-4659-8ECC-0B2EC88422FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking_server", "..\..\..\..\..\..\..\Downloads\Networking\Networking\Networking_server\Networking_server.csproj", "{6A5E7179-BEB5-40FB-8D8D-0DC38CA2ED45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking_server", "..\Networking_server\Networking_server.csproj", "{6A5E7179-BEB5-40FB-8D8D-0DC38CA2ED45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
